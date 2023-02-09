@@ -1,0 +1,119 @@
+.hero_section {
+    background: url('../../assets/images/bg-1.png');
+    padding: 80px 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero_section .hero-cont {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero_section .hero-cont .hero-text {
+    width: 65%;
+}
+
+.hero_section .hero-cont .hero-image {
+    width: 35%;
+}
+
+.hero_section .hero-cont .hero-text .sub-title2 {
+    font-size: 30px;
+    max-width: 410px;
+}
+
+.hero_section .hero-cont .hero-image .hero-logo {
+    display: flex;
+    align-items: center;
+}
+
+.hero_section .hero-cont .hero-image .hero-logo img:first-child {
+    position: relative;
+    z-index: 1;
+    margin-top: 25px;
+}
+
+.hero_section .hero-cont .hero-image .hero-logo img:nth-child(2) {
+    position: absolute;
+    animation: blueLogoAnimate 6s infinite linear;
+}
+
+@keyframes blueLogoAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .hero_section .hero-cont .hero-text {
+        width: 60%;
+    }
+
+    .hero_section .hero-cont .hero-image {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    .hero_section .hero-cont .hero-text {
+        width: 55%;
+    }
+
+    .hero_section .hero-cont .hero-image {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero_section {
+        height: 420px;
+    }
+
+    .hero_section .hero-cont .hero-text, .hero_section .hero-cont .hero-image {
+        width: 100%;
+    }
+
+    .hero_section .hero-cont .hero-text {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .hero_section .hero-cont .hero-image {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero_section .hero-cont {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero_section .hero-cont .hero-text .sub-title2 {
+        font-size: 22px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero_section {
+        padding: 40px 0;
+    }
+
+    .hero_section .hero-cont .hero-image .hero-logo img:first-child {
+        width: 300px;
+    }
+
+    .hero_section .hero-cont .hero-image .hero-logo img:nth-child(2) {
+        width: 285px;
+    }
+}
